@@ -6,7 +6,22 @@ export function Tombol_2({isiPesan, namaTombol} : {isiPesan:any, namaTombol:any}
 			{namaTombol}
 		</button>
 	);
-    }
+}
+
+export function Tombol_3({isiPesan, namaTombol} : {isiPesan:any, namaTombol:any}) {
+	return (
+		<button 
+            className="bg-green-500 hover:bg-green-700 text-white p-2 rounded m-2"
+			onClick={(e) => {
+                    e.stopPropagation();
+                    alert(isiPesan)
+                }
+            }>
+			{namaTombol}
+		</button>
+	);
+}
+
 export default function Tombol_1() {
     // menambahkan fungsi untuk menangani klik tombol
     function handleClick() {

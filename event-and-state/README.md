@@ -11,5 +11,10 @@
 *jawab* : Modifikasi dilakukan pada bagian function handleClick yang sebelumnya
 ![alt text](image.png) menjadi
 ![alt text](image-1.png)
+
 3. Tambahkan tombol "Artikel Sebelumnya", untuk menampilkan artikel secara mundur.
 ![alt text](image-2.png)
+
+4. Jalankan pada browser, amati dan laporkan apa yang terjadi?
+
+*Jawab* : Jika jawaban benar maka akan tampil pesan bahwa jawaban benar begitupun jika jawaban salah maka akan terdapat pesan error bahwa jawaban salah.

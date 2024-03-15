@@ -28,3 +28,17 @@
 6. Kenapa perlu menghapus state fullName? Apa keuntungannya?
 
 *jawab* : Kita tidak benar-benar menghapus state fullName. Sebaliknya, kita memperbarui nilai fullName secara dinamis berdasarkan nilai terbaru dari input nama depan dan belakang. Keuntungan dari pendekatan ini adalah kita menghindari kebutuhan untuk memiliki state tambahan yang sebenarnya tidak perlu. Sebagai gantinya, kita mengandalkan state firstName dan lastName yang sudah ada, dan fullName hanya berfungsi sebagai hasil gabungan dari keduanya.
+
+7. Apa tujuan dari penulisan ini key={to.email} pada < Chat key={to.email} contact={to} / > ?
+
+*jawab* : Penulisan key={to.email} pada elemen <Chat key={to.email} contact={to} /> adalah untuk memberikan identitas unik kepada setiap elemen dalam daftar. Properti key digunakan oleh React untuk membantu dalam proses penciptaan, pembaruan, dan penghapusan elemen dalam daftar.
+
+8. Apa fungsi dari props key tersebut?
+
+*jawab* : Fungsi dari properti key adalah sebagai berikut:
+
+- Meningkatkan Efisiensi Render: Ketika ada perubahan dalam daftar elemen, React menggunakan properti key untuk mengidentifikasi perubahan mana yang terjadi. Dengan demikian, React dapat memperbarui hanya elemen-elemen yang berubah, tanpa perlu merender ulang seluruh daftar.
+
+- Mengidentifikasi Elemen: Properti key membantu React dalam mengidentifikasi elemen-elemen dalam daftar secara unik. Ini membantu React membedakan antara elemen yang berbeda dan mengelola mereka dengan benar selama proses render.
+
+- Pengoptimalan Re-render: Properti key membantu React dalam menentukan apakah suatu elemen telah diubah, ditambahkan, atau dihapus dari daftar. Dengan menggunakan key, React dapat memutuskan cara terbaik untuk mengoptimalkan proses re-render, menghasilkan kinerja yang lebih baik.

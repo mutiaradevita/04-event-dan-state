@@ -1,6 +1,7 @@
 "use client";
 import Tombol_1, { Tombol_2, Tombol_3 } from "@/components/button";
 import Form from "@/components/form";
+import Accordion from "@/components/accordion";
 import Gallery from "@/components/gallery";
 
 export default function Home() {
